@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --main-bg-light: hsl(0, 0%, 95%);
+  --main-text-dark: hsl(0, 0%, 17%);
+
+  --main-div-light: hsl(0, 0%, 83%);
+}
+
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-bg-light);
+  color: var(--main-text-dark);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+hr.rule {
+  background: var(--main-div-light);
+  border-radius: 1px;
+  border: none;
+  height: 2px;
+}
