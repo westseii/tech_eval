@@ -30,3 +30,8 @@ hr.rule {
   border: none;
   height: 2px;
 }
+hr.rule-sm {
+  background: var(--main-div-light);
+  border: none;
+  height: 1px;
+}

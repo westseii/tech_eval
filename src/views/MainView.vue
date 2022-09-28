@@ -3,13 +3,12 @@
 
   import ProductTab from "@/components/ProductTab.vue";
 
-  // product prices are preformatted before being passed as a prop
+  // product prices are preformatted before being passed as a prop (String)
   const formatter = new Intl.NumberFormat("en-US", {
     currency: "USD",
     style: "currency",
   });
 
-  // test
   // const testVar = import.meta.env.VITE_TEST_VAR;
   // console.log(testVar);
 </script>
@@ -23,6 +22,7 @@
     <ProductTab
       :key="product.id"
       :product-id="product.id"
+      :product-image="product.image"
       :product-price="formatter.format(product.price)"
       :product-title="product.title"
       class="product-tab"

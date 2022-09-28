@@ -3,15 +3,16 @@
 
   import products from "@/temp/products.js";
 
+  import ProductCard from "@/components/ProductCard.vue";
+
   const route = useRoute();
   const { id } = route.params;
-  let product;
-
-  product = products.value[id];
+  let product = products.value[id];
 
   // events
-  const userAddLike = () => products.value[id].likes++;
-  const userRemoveLike = () => products.value[id].likes--;
+  // temporary behavior
+  const userLikeProduct = (id) => products.value[id].likes++;
+  const userDislikeProduct = (id) => products.value[id].likes--;
 </script>
 
 <template>
@@ -20,17 +21,12 @@
 
     <hr class="rule" />
 
-    <div>
-      <h3>{{ product.title }}</h3>
-      <div>{{ product.description }}</div>
-    </div>
-
-    <div v-if="product.likes !== undefined">
-      <br />
-      <span>{{ product.likes }}</span>
-      <button @click="userAddLike">Like</button>
-      <button @click="userRemoveLike">Dislike</button>
-    </div>
+    <ProductCard
+      :product-data="product"
+      @like="(id) => userLikeProduct(id)"
+      @dislike="(id) => userDislikeProduct(id)"
+      class="product-card"
+    />
 
     <hr class="rule" />
 

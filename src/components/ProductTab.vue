@@ -51,7 +51,9 @@
   }
 
   .image {
+    color: var(--main-div-light);
     display: block;
+    width: 128px;
   }
 
   .details {
