@@ -4,10 +4,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "db": "node db/index.js"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
+    "sqlite3": "^5.1.1",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },

@@ -40,6 +40,7 @@
 <style scoped>
   .product-tab {
     border-radius: 8px;
+    box-shadow: 1px 2px 4px 0 var(--main-div-light);
     display: flex;
     max-width: 512px;
     padding: 8px;

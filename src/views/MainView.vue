@@ -19,6 +19,7 @@
 
     <hr class="rule" />
 
+    <!-- TODO: these component props are cumbersome; temporary solution -->
     <ProductTab
       :key="product.id"
       :product-id="product.id"

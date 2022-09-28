@@ -1,404 +1,404 @@
 create table PRODUCTS (
-	id VARCHAR(40),
-	title VARCHAR(50),
-	desc TEXT,
-	image VARCHAR(50),
-	price VARCHAR(50),
-	likes INT
+  id VARCHAR(40),
+  title VARCHAR(50),
+  desc TEXT,
+  image VARCHAR(50),
+  price DECIMAL(4, 2),
+  likes INT
 );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'2c1b0862-e107-42e8-943e-6a27de604fe1',
-		'Summer Days With Coo',
-		'eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus',
-		'http://dummyimage.com/107x100.png/dddddd/000000',
-		'$6.10',
-		3
-	);
+  (
+    '16336678-f8e7-4795-82fa-93456c0fc8ac',
+    'Happy Here and Now',
+    'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non',
+    'http://dummyimage.com/154x100.png/cc0000/ffffff',
+    5.87,
+    41
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'd70aed1d-420a-418c-815a-f9f3042b4b80',
-		'Way Back, The',
-		'interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia',
-		'http://dummyimage.com/183x100.png/ff4444/ffffff',
-		'$8.50',
-		30
-	);
+  (
+    'f414d876-46a9-4d3d-a71f-68c61adcd831',
+    'Thomasine & Bushrod',
+    'purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam',
+    'http://dummyimage.com/221x100.png/cc0000/ffffff',
+    3.86,
+    44
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'3a4e7dea-f47c-44e5-804c-50008a36f401',
-		'Story of Floating Weeds, A (Ukikusa monogatari)',
-		'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget',
-		'http://dummyimage.com/167x100.png/5fa2dd/ffffff',
-		'$1.00',
-		23
-	);
+  (
+    '5bb1ceeb-23e1-4c63-bcc9-5cf38125f3c8',
+    'Bridges at Toko-Ri, The',
+    'lobortis vel dapibus at diam nam tristique tortor eu pede',
+    'http://dummyimage.com/193x100.png/dddddd/000000',
+    2.14,
+    75
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'7c7f5d42-aa46-47e9-b8cf-40111a1f7b55',
-		'Hindenburg, The',
-		'rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus',
-		'http://dummyimage.com/173x100.png/5fa2dd/ffffff',
-		'$4.81',
-		85
-	);
+  (
+    'f877c98c-40ff-47ef-b9c3-478d2bccf6de',
+    'Daniel',
+    'nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in',
+    'http://dummyimage.com/123x100.png/5fa2dd/ffffff',
+    2.38,
+    61
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'687bcb3e-d75f-4d30-9a36-e9811abdb4ba',
-		'Chattahoochee',
-		'quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut',
-		'http://dummyimage.com/106x100.png/ff4444/ffffff',
-		'$2.06',
-		77
-	);
+  (
+    '73073045-8b4e-4a02-a6b1-93099589feb2',
+    'Firehouse Dog',
+    'aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula',
+    'http://dummyimage.com/104x100.png/5fa2dd/ffffff',
+    4.94,
+    29
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'30164041-3863-445e-b664-d7edc0eb6117',
-		'Sugar Hill',
-		'risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit',
-		'http://dummyimage.com/238x100.png/ff4444/ffffff',
-		'$2.23',
-		36
-	);
+  (
+    '59de642a-0ee1-44ad-8866-1c4950e47b91',
+    'Mean Season, The',
+    'in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque',
+    'http://dummyimage.com/109x100.png/dddddd/000000',
+    6.04,
+    99
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'0c27e01c-3601-4a65-a5a6-0c306e6046f2',
-		'Secret Life of Words, The',
-		'vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus',
-		'http://dummyimage.com/143x100.png/ff4444/ffffff',
-		'$9.86',
-		42
-	);
+  (
+    '5615c16e-f0e0-466f-baf8-b999fc6194f8',
+    'Halloweentown II: Kalabar''s Revenge',
+    'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien',
+    'http://dummyimage.com/167x100.png/cc0000/ffffff',
+    5.28,
+    72
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'785f775e-a889-4bf5-bae6-6172592e541a',
-		'Graveyard of Honor (Shin jingi no hakaba)',
-		'nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo',
-		'http://dummyimage.com/103x100.png/5fa2dd/ffffff',
-		'$9.14',
-		12
-	);
+  (
+    '0293e033-b41f-4ef7-a8ed-c02d4ff95b0c',
+    'Buck and the Preacher',
+    'mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc',
+    'http://dummyimage.com/179x100.png/5fa2dd/ffffff',
+    5.17,
+    33
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'e24da210-fb10-4cfb-ac27-44f1e0276777',
-		'Fourth Kind, The',
-		'elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit',
-		'http://dummyimage.com/234x100.png/5fa2dd/ffffff',
-		'$6.85',
-		83
-	);
+  (
+    'ead7df05-5b82-407c-b43c-03ece41eb6fb',
+    'Legend of the Eight Samurai (Satomi hakken-den)',
+    'odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet',
+    'http://dummyimage.com/180x100.png/5fa2dd/ffffff',
+    3.51,
+    26
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'aa29f513-db2a-43d2-a3ab-cea63dc1ee37',
-		'Sicilian, The',
-		'justo morbi ut odio cras mi pede malesuada in imperdiet et',
-		'http://dummyimage.com/100x100.png/cc0000/ffffff',
-		'$3.30',
-		19
-	);
+  (
+    'cb30c4ff-3a0f-425b-ac8a-1ba3d4aae3b9',
+    'Angel Baby',
+    'a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam',
+    'http://dummyimage.com/108x100.png/dddddd/000000',
+    5.68,
+    12
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'731602ba-f544-419b-b8d7-43fcd91aa0e1',
-		'Along Came a Spider',
-		'posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec',
-		'http://dummyimage.com/118x100.png/ff4444/ffffff',
-		'$9.04',
-		3
-	);
+  (
+    '0cda74b1-f84c-4a1c-a06e-ea177636774c',
+    'Aqua Teen Hunger Force Colon Movie Film for Theaters',
+    'risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum',
+    'http://dummyimage.com/203x100.png/cc0000/ffffff',
+    5.34,
+    33
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'6c61b6f9-b42c-4004-b37a-bb1547ad5c52',
-		'Travelling Players, The (O thiasos)',
-		'scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean',
-		'http://dummyimage.com/207x100.png/ff4444/ffffff',
-		'$3.24',
-		19
-	);
+  (
+    '4dd3fbed-ac7f-4db5-97a1-7f57418cb580',
+    'Truly Human (Et rigtigt menneske)',
+    'in leo maecenas pulvinar lobortis est phasellus sit amet erat',
+    'http://dummyimage.com/102x100.png/ff4444/ffffff',
+    8.62,
+    87
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'e438bdb0-7eed-42aa-9d44-39d01a518517',
-		'Three Colors: White (Trzy kolory: Bialy)',
-		'nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem',
-		'http://dummyimage.com/139x100.png/ff4444/ffffff',
-		'$1.23',
-		28
-	);
+  (
+    '8d39bcaf-b76a-43e7-9c81-cc852852fe87',
+    'Black River (Kuroi kawa)',
+    'vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est',
+    'http://dummyimage.com/143x100.png/5fa2dd/ffffff',
+    9.69,
+    75
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'7b8b27de-fb65-46b1-8fbf-3fa7a9be2c4f',
-		'All the Pretty Horses',
-		'cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit',
-		'http://dummyimage.com/139x100.png/cc0000/ffffff',
-		'$6.85',
-		1
-	);
+  (
+    '1598a9f7-5561-4e4b-bbde-484aff805d8a',
+    'ZMD: Zombies of Mass Destruction',
+    'accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris',
+    'http://dummyimage.com/171x100.png/ff4444/ffffff',
+    1.92,
+    35
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'751032d6-da4f-4726-bf49-ff5c1b8a721e',
-		'Dentist, The',
-		'luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin',
-		'http://dummyimage.com/145x100.png/cc0000/ffffff',
-		'$7.56',
-		79
-	);
+  (
+    'f10717e8-686a-4363-8284-64c9df7f8db2',
+    'Moment After, The',
+    'aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit',
+    'http://dummyimage.com/215x100.png/5fa2dd/ffffff',
+    3.33,
+    70
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'370ffc00-b180-4401-a0ad-0a074f73844e',
-		'True Lies',
-		'et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id',
-		'http://dummyimage.com/133x100.png/ff4444/ffffff',
-		'$3.93',
-		23
-	);
+  (
+    '2d850481-b331-4f4c-9607-6edec63ec1e6',
+    '7 Days (Les 7 jours du talion)',
+    'habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit',
+    'http://dummyimage.com/137x100.png/dddddd/000000',
+    7.89,
+    88
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'5669df08-c65c-4b68-8e21-fae6a37243f7',
-		'Tormented',
-		'eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed',
-		'http://dummyimage.com/104x100.png/5fa2dd/ffffff',
-		'$9.92',
-		71
-	);
+  (
+    '0584f8c8-ec9e-44cb-9f8c-60149f8b2b30',
+    'Attack the Block',
+    'mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis',
+    'http://dummyimage.com/235x100.png/ff4444/ffffff',
+    5.87,
+    26
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'f59954e6-7c62-4b25-bf5c-112abbd35d67',
-		'Merry Widow, The',
-		'mauris eget massa tempor convallis nulla neque libero convallis eget eleifend',
-		'http://dummyimage.com/145x100.png/cc0000/ffffff',
-		'$0.81',
-		75
-	);
+  (
+    '9569da49-1b1f-44f3-894d-9c0b7e1476a1',
+    'Crackerjack',
+    'euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin',
+    'http://dummyimage.com/174x100.png/ff4444/ffffff',
+    9.38,
+    19
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'c1af4545-c4c5-498c-ab5d-6d6eab5939e0',
-		'Jeepers Creepers 2',
-		'orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit',
-		'http://dummyimage.com/196x100.png/cc0000/ffffff',
-		'$0.79',
-		95
-	);
+  (
+    'd758349f-9283-491a-a778-dc0ad71862bb',
+    'Five and Ten',
+    'nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus',
+    'http://dummyimage.com/222x100.png/ff4444/ffffff',
+    5.69,
+    62
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'5b1cba79-7edb-43f2-b8fe-3edde4435a2e',
-		'Effie Gray',
-		'morbi non quam nec dui luctus rutrum nulla tellus in',
-		'http://dummyimage.com/222x100.png/dddddd/000000',
-		'$0.40',
-		86
-	);
+  (
+    '322e150e-0e76-42cb-9730-d2bd19e7104b',
+    'Walking Tall',
+    'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique',
+    'http://dummyimage.com/126x100.png/dddddd/000000',
+    2.78,
+    74
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'8d07c8bd-cc1f-4bb1-821e-1c2525768472',
-		'Underworld: Rise of the Lycans',
-		'luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum',
-		'http://dummyimage.com/200x100.png/dddddd/000000',
-		'$9.16',
-		2
-	);
+  (
+    '1718db9c-473e-4bba-b5a0-b806ac7df8f3',
+    'Onibaba',
+    'eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut',
+    'http://dummyimage.com/204x100.png/cc0000/ffffff',
+    3.39,
+    68
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'84d1a91e-7cc3-4336-b9d9-8e8091a84d7a',
-		'Poto and Cabengo',
-		'est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue',
-		'http://dummyimage.com/218x100.png/ff4444/ffffff',
-		'$2.65',
-		26
-	);
+  (
+    '8ff476b1-4db3-4d9b-b736-b82e88af1dbc',
+    'Word Wars',
+    'ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor',
+    'http://dummyimage.com/111x100.png/dddddd/000000',
+    2.75,
+    92
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'aa0b2685-647d-47be-9c45-77e9d35ceacb',
-		'Storm Rider',
-		'vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur',
-		'http://dummyimage.com/121x100.png/dddddd/000000',
-		'$9.02',
-		22
-	);
+  (
+    '2cf197fb-e8d0-4e5e-bdf0-091239004101',
+    'Panama Hattie',
+    'in porttitor pede justo eu massa donec dapibus duis at velit eu est',
+    'http://dummyimage.com/209x100.png/dddddd/000000',
+    5.66,
+    6
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'73d6b4ab-9336-4388-9a4e-83bbc99278ff',
-		'Trishna',
-		'sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui',
-		'http://dummyimage.com/250x100.png/ff4444/ffffff',
-		'$0.10',
-		93
-	);
+  (
+    'bf976eae-013f-419d-9ecc-729730aa948a',
+    'Warlock',
+    'lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien',
+    'http://dummyimage.com/145x100.png/cc0000/ffffff',
+    7.46,
+    53
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'5bfefea5-0305-4a96-ac80-6d869e0b7f5f',
-		'Orphanage, The (Orfanato, El)',
-		'varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus',
-		'http://dummyimage.com/156x100.png/dddddd/000000',
-		'$1.28',
-		87
-	);
+  (
+    '10e9c9e2-4fd9-41fd-9d46-ff7bf4d7118c',
+    'Between Strangers',
+    'ipsum primis in faucibus orci luctus et ultrices posuere cubilia',
+    'http://dummyimage.com/241x100.png/5fa2dd/ffffff',
+    5.02,
+    38
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'e309ee7f-d9ed-432d-b007-494c4c4df9c0',
-		'Village, The',
-		'ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio',
-		'http://dummyimage.com/134x100.png/dddddd/000000',
-		'$2.55',
-		9
-	);
+  (
+    '47ba958e-fbb2-41ec-8f73-b61bde86f64e',
+    'Grand Theft Auto',
+    'amet sem fusce consequat nulla nisl nunc nisl duis bibendum',
+    'http://dummyimage.com/156x100.png/cc0000/ffffff',
+    3.75,
+    29
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'fb73377e-d1f2-4563-b186-8aa6e3d751da',
-		'Big Bird Cage, The',
-		'duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse',
-		'http://dummyimage.com/230x100.png/5fa2dd/ffffff',
-		'$2.70',
-		27
-	);
+  (
+    '1ae01fe1-1020-4629-85da-46d1cb87ef4a',
+    'Swept from the Sea',
+    'lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium',
+    'http://dummyimage.com/162x100.png/dddddd/000000',
+    3.33,
+    92
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'6d80851f-bb66-43b3-85f9-86c3551c4371',
-		'Cast Away',
-		'aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras',
-		'http://dummyimage.com/212x100.png/dddddd/000000',
-		'$5.08',
-		22
-	);
+  (
+    '13d297e0-edcd-449e-aab4-00d7576c0f67',
+    'Duo (Pas de deux)',
+    'semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante',
+    'http://dummyimage.com/173x100.png/ff4444/ffffff',
+    9.33,
+    32
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'82bdbddd-084c-453b-a85f-f1375385a53b',
-		'Revenge of the Pink Panther',
-		'dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat',
-		'http://dummyimage.com/183x100.png/ff4444/ffffff',
-		'$9.46',
-		56
-	);
+  (
+    '63362dbc-8f62-438d-a7fd-3e2ba5b832e7',
+    'Dead End',
+    'justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer',
+    'http://dummyimage.com/222x100.png/ff4444/ffffff',
+    4.27,
+    89
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'499dbf82-4b9b-49c2-8c59-6c5fa46d97c3',
-		'No End (Bez konca)',
-		'imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus',
-		'http://dummyimage.com/225x100.png/dddddd/000000',
-		'$5.96',
-		54
-	);
+  (
+    'a5533305-202c-4a51-b5ec-8d1f813c75ef',
+    'Three Outlaw Samurai (Sanbiki no samurai)',
+    'tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer',
+    'http://dummyimage.com/131x100.png/ff4444/ffffff',
+    3.7,
+    1
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'0b3a32ad-2669-4093-8441-a936b0e016be',
-		'Tapped',
-		'non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac',
-		'http://dummyimage.com/142x100.png/ff4444/ffffff',
-		'$5.30',
-		44
-	);
+  (
+    '4ad872bc-ad8a-4b4a-af7f-f226c3f698eb',
+    'Foul Play',
+    'cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut',
+    'http://dummyimage.com/110x100.png/ff4444/ffffff',
+    1.84,
+    78
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'5cc61aef-fcee-40d9-af25-cb2528857285',
-		'Kiki',
-		'eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet',
-		'http://dummyimage.com/124x100.png/dddddd/000000',
-		'$3.68',
-		72
-	);
+  (
+    '254e2808-a21d-4b1f-a3a4-e43c89aa779a',
+    'The Inner Circle',
+    'nibh ligula nec sem duis aliquam convallis nunc proin at turpis a',
+    'http://dummyimage.com/199x100.png/ff4444/ffffff',
+    8.25,
+    14
+  );
 
 insert into
-	PRODUCTS (id, title, desc, image, price, likes)
+  PRODUCTS (id, title, desc, image, price, likes)
 values
-	(
-		'535fe3c6-536a-4f30-9424-dfbf2bc9ac88',
-		'Siberia',
-		'mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor',
-		'http://dummyimage.com/224x100.png/cc0000/ffffff',
-		'$5.24',
-		43
-	);
+  (
+    '65cf0b53-0b55-4387-9eac-57821c1ee100',
+    'Pawn',
+    'sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula',
+    'http://dummyimage.com/187x100.png/5fa2dd/ffffff',
+    1.01,
+    42
+  );
