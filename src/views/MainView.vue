@@ -1,7 +1,13 @@
 <script setup>
   import products from "@/temp/products.js";
 
-  import ProductCard from "@/components/ProductCard.vue";
+  import ProductTab from "@/components/ProductTab.vue";
+
+  // product prices are preformatted before being passed as a prop
+  const formatter = new Intl.NumberFormat("en-US", {
+    currency: "USD",
+    style: "currency",
+  });
 </script>
 
 <template>
@@ -10,12 +16,18 @@
 
     <hr class="rule" />
 
-    <ProductCard
+    <ProductTab
       :key="product.id"
+      :product-price="formatter.format(product.price)"
       :product-title="product.title"
+      class="product-tab"
       v-for="product in products"
     />
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .product-tab:nth-of-type(n + 2) {
+    margin-top: 16px;
+  }
+</style>

@@ -6,6 +6,7 @@
 
     <hr class="rule" />
 
+    <p>Sorry... =(</p>
     <button @click="$router.back()">Back to previous</button>
   </section>
 </template>

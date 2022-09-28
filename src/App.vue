@@ -17,4 +17,8 @@
     padding: 0 16px;
     width: 100%;
   }
+
+  .main {
+    margin-bottom: 64px;
+  }
 </style>

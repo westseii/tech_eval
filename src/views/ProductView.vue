@@ -9,14 +9,6 @@
 
   product = products.value[id];
 
-  if (!product) {
-    product = {
-      title: "Product doesn't exist",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    };
-  }
-
-  //
   // events
   const userAddLike = () => products.value[id].likes++;
   const userRemoveLike = () => products.value[id].likes--;
@@ -35,7 +27,7 @@
 
     <div v-if="product.likes !== undefined">
       <br />
-      {{ product.likes }}
+      <span>{{ product.likes }}</span>
       <button @click="userAddLike">Like</button>
       <button @click="userRemoveLike">Dislike</button>
     </div>

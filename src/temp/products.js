@@ -1,5 +1,6 @@
 import { ref } from "vue";
 
+// temporary item data from my favorite game of all time, Asheron's Call
 const products = ref([
   {
     id: 0,
@@ -25,6 +26,23 @@ const products = ref([
     image: null,
     price: 31,
     likes: 33,
+  },
+  {
+    id: 3,
+    title: "Brogord's Axe",
+    description: "Crafted by my own hand in the third year of our exile. --Brogord the Forester",
+    image: null,
+    price: 940,
+    likes: 1,
+  },
+  {
+    id: 4,
+    title: "Crystal Sword",
+    description:
+      "A crystalline sword, made out of what appears to be a shard of the original soul crystal. It is cold to the touch, and seems to glow with an inner radiance.",
+    image: null,
+    price: 7000,
+    likes: 999,
   },
 ]);
 
