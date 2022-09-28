@@ -8,6 +8,10 @@
     currency: "USD",
     style: "currency",
   });
+
+  // test
+  // const testVar = import.meta.env.VITE_TEST_VAR;
+  // console.log(testVar);
 </script>
 
 <template>
@@ -18,6 +22,7 @@
 
     <ProductTab
       :key="product.id"
+      :product-id="product.id"
       :product-price="formatter.format(product.price)"
       :product-title="product.title"
       class="product-tab"

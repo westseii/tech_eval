@@ -1,5 +1,9 @@
 <script setup>
   const props = defineProps({
+    productId: {
+      type: Number,
+      default: 0,
+    },
     productImage: {
       type: String,
       default: "http://dummyimage.com/107x100.png/dddddd/000000",
@@ -16,7 +20,10 @@
 </script>
 
 <template>
-  <div class="product-tab">
+  <div
+    @click="$router.push(`/product/${productId}`)"
+    class="product-tab"
+  >
     <img
       :alt="`Product image for ${productTitle}.`"
       :src="productImage"
@@ -32,8 +39,9 @@
 
 <style scoped>
   .product-tab {
+    border-radius: 8px;
     display: flex;
-    overflow: auto;
+    max-width: 512px;
     padding: 8px;
   }
   .product-tab:hover {
