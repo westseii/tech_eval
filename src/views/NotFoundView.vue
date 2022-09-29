@@ -2,7 +2,7 @@
 
 <template>
   <section class="product">
-    <h2>Not Found</h2>
+    <h2>URL Not Found</h2>
 
     <hr class="rule" />
 

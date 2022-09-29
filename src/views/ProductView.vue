@@ -9,7 +9,9 @@
   const product = ref();
 
   const getProductById = async () => {
-    const response = await fetch(`${inject("api")}/product/${id}`);
+    const response = await fetch(`${inject("api")}/product/${id}`, {
+      method: "GET",
+    });
     const json = await response.json();
     product.value = json.data;
   };
@@ -17,7 +19,6 @@
   onMounted(() => getProductById());
 
   // events
-  // temporary behavior
   const userLikeProduct = (id) => console.log(`Liked: ${id}`);
   const userDislikeProduct = (id) => console.log(`Disliked: ${id}`);
 </script>
@@ -36,9 +37,6 @@
       class="product-card"
       v-if="product"
     />
-    <h3 v-else>
-      Product with id: <span class="warning">{{ id }}</span> not found.
-    </h3>
 
     <hr class="rule" />
 
@@ -46,8 +44,4 @@
   </section>
 </template>
 
-<style scoped>
-  .warning {
-    color: orangered;
-  }
-</style>
+<style scoped></style>

@@ -2,7 +2,7 @@
 const sql = {
   postProduct: `
     insert into
-      PRODUCTS (id, title, desc, image, price, likes)
+      PRODUCTS (id, title, description, image, price, likes)
     values
       (
         ?,
@@ -13,12 +13,9 @@ const sql = {
         ?
       );
     `,
-  getProducts: `
-    select * from PRODUCTS
-    `,
-  getProductById: `
-    select * from PRODUCTS where id = ?
-    `,
+  getProductById: "select * from PRODUCTS where id = ?",
+  getProducts: "select * from PRODUCTS",
+  deleteProductById: "delete from PRODUCTS where id = ?",
 };
 
 module.exports = sql;

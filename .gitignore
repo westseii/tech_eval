@@ -30,3 +30,4 @@ coverage
 # normally .env would be hidden, but nothing sensitive is stored here for this app
 # .env.development
 *.code-workspace
+db/sql/dummyData.js

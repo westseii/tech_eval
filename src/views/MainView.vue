@@ -1,8 +1,6 @@
 <script setup>
   import { inject, onMounted, ref } from "vue";
 
-  // import dummyProducts from "@/temp/products.js";
-
   import ProductTab from "@/components/ProductTab.vue";
 
   // product prices are formatted in USD
@@ -14,9 +12,12 @@
   const products = ref();
 
   const getProducts = async () => {
-    const response = await fetch(`${inject("api")}/product`);
+    const response = await fetch(`${inject("api")}/product`, {
+      method: "GET",
+    });
     const json = await response.json();
     products.value = json.data.map((product) => {
+      // only the necessary keys
       return {
         id: product.id,
         title: product.title,
@@ -32,6 +33,11 @@
 <template>
   <section class="main">
     <h2>Main View</h2>
+
+    <p>
+      The database is populated with different items and descriptions from a video game that I used
+      to play.
+    </p>
 
     <hr class="rule" />
 

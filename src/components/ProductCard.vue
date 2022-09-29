@@ -34,7 +34,7 @@
       <div>
         <h3>{{ productData.title }}</h3>
         <p>{{ formatter.format(productData.price) }}</p>
-        <p>{{ productData.desc }}</p>
+        <p>{{ productData.description }}</p>
 
         <hr class="rule-sm" />
       </div>
