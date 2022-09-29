@@ -5,9 +5,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "db": "node db/index.js"
+    "db": "node db/temp/index.js",
+    "server": "node db/server.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
     "normalize.css": "^8.0.1",
     "sqlite3": "^5.1.1",
     "vue": "^3.2.38",

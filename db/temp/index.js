@@ -1,5 +1,8 @@
 const sqlite3 = require("sqlite3").verbose();
 
+// playground; testing
+// used periodically to create/drop the dummy PRODUCTS table
+
 // relative db paths
 const dbs = {
   dummy: "db/temp/mock.db",
@@ -17,6 +20,28 @@ const db = new sqlite3.Database(dbs.dummy, sqlite3.OPEN_READWRITE, (err) => {
   }
 });
 
+// commonly repeated sql; has placeholders
+const sql = {
+  postProduct: `
+  insert into
+    PRODUCTS (id, title, desc, image, price, likes)
+  values
+    (
+      ?,
+      ?,
+      ?,
+      ?,
+      ?,
+      ?
+    );
+  `,
+  getProducts: `
+  select * from PRODUCTS
+  `,
+};
+
+// quick drop table if I change schema
+//
 // db.run("drop table PRODUCTS");
 
 // create table; once
@@ -32,26 +57,10 @@ const db = new sqlite3.Database(dbs.dummy, sqlite3.OPEN_READWRITE, (err) => {
 // );
 // `);
 
-// insert into PRODUCTS; template
-//
-const sql = `
-insert into
-  PRODUCTS (id, title, desc, image, price, likes)
-values
-  (
-    ?,
-    ?,
-    ?,
-    ?,
-    ?,
-    ?
-  );
-`;
-
-// run template
+// run template; once
 //
 // db.run(
-//   sql,
+//   sql.postProduct,
 //   [
 //     "2c1b0862-e107-42e8-943e-6a27de604fe1",
 //     "Summer Days With Coo",
@@ -69,13 +78,7 @@ values
 //   }
 // );
 
-// query PRODUCTS; template
-//
-const queryAll = `
-select * from PRODUCTS
-`;
-
-db.all(queryAll, [], (err, rows) => {
+db.all(sql.getProducts, [], (err, rows) => {
   if (err) {
     console.error(err.message);
   } else {
