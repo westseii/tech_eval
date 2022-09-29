@@ -1,8 +1,5 @@
 <script setup>
   import { RouterLink, RouterView } from "vue-router";
-
-  // root endpoint for the server/database
-  const api = import.meta.env.VITE_API_ADDRESS;
 </script>
 
 <template>

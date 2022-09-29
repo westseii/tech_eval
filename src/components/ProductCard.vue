@@ -1,11 +1,14 @@
 <script setup>
   const props = defineProps({
-    productData: Object,
+    productData: {
+      type: Object,
+      required: true,
+    },
   });
 
   const emit = defineEmits(["like", "dislike"]);
 
-  // TODO: this doesn't need to be instantiated here; temporary solution
+  // product prices are formatted in USD
   const formatter = new Intl.NumberFormat("en-US", {
     currency: "USD",
     style: "currency",
@@ -31,7 +34,7 @@
       <div>
         <h3>{{ productData.title }}</h3>
         <p>{{ formatter.format(productData.price) }}</p>
-        <p>{{ productData.description }}</p>
+        <p>{{ productData.desc }}</p>
 
         <hr class="rule-sm" />
       </div>

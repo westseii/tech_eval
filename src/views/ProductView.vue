@@ -1,18 +1,25 @@
 <script setup>
+  import { inject, onMounted, ref } from "vue";
   import { useRoute } from "vue-router";
-
-  import products from "@/temp/products.js";
 
   import ProductCard from "@/components/ProductCard.vue";
 
   const route = useRoute();
   const { id } = route.params;
-  let product = products.value[id];
+  const product = ref();
+
+  const getProductById = async () => {
+    const response = await fetch(`${inject("api")}/product/${id}`);
+    const json = await response.json();
+    product.value = json.data;
+  };
+
+  onMounted(() => getProductById());
 
   // events
   // temporary behavior
-  const userLikeProduct = (id) => products.value[id].likes++;
-  const userDislikeProduct = (id) => products.value[id].likes--;
+  const userLikeProduct = (id) => console.log(`Liked: ${id}`);
+  const userDislikeProduct = (id) => console.log(`Disliked: ${id}`);
 </script>
 
 <template>
@@ -21,12 +28,17 @@
 
     <hr class="rule" />
 
+    <!-- TODO: fix component load popping -->
     <ProductCard
       :product-data="product"
-      @like="(id) => userLikeProduct(id)"
       @dislike="(id) => userDislikeProduct(id)"
+      @like="(id) => userLikeProduct(id)"
       class="product-card"
+      v-if="product"
     />
+    <h3 v-else>
+      Product with id: <span class="warning">{{ id }}</span> not found.
+    </h3>
 
     <hr class="rule" />
 
@@ -34,4 +46,8 @@
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .warning {
+    color: orangered;
+  }
+</style>

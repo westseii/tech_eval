@@ -1,16 +1,32 @@
 <script setup>
-  import products from "@/temp/products.js";
+  import { inject, onMounted, ref } from "vue";
+
+  // import dummyProducts from "@/temp/products.js";
 
   import ProductTab from "@/components/ProductTab.vue";
 
-  // product prices are preformatted before being passed as a prop (String)
+  // product prices are formatted in USD
   const formatter = new Intl.NumberFormat("en-US", {
     currency: "USD",
     style: "currency",
   });
 
-  // const testVar = import.meta.env.VITE_TEST_VAR;
-  // console.log(testVar);
+  const products = ref();
+
+  const getProducts = async () => {
+    const response = await fetch(`${inject("api")}/product`);
+    const json = await response.json();
+    products.value = json.data.map((product) => {
+      return {
+        id: product.id,
+        title: product.title,
+        image: product.image,
+        price: formatter.format(product.price),
+      };
+    });
+  };
+
+  onMounted(() => getProducts());
 </script>
 
 <template>
@@ -19,13 +35,9 @@
 
     <hr class="rule" />
 
-    <!-- TODO: these component props are cumbersome; temporary solution -->
     <ProductTab
       :key="product.id"
-      :product-id="product.id"
-      :product-image="product.image"
-      :product-price="formatter.format(product.price)"
-      :product-title="product.title"
+      :product-data="product"
       class="product-tab"
       v-for="product in products"
     />

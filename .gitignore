@@ -27,5 +27,6 @@ coverage
 *.sln
 *.sw?
 
-.env.development
+# normally .env would be hidden, but nothing sensitive is stored here for this app
+# .env.development
 *.code-workspace

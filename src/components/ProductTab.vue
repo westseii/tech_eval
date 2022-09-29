@@ -1,44 +1,33 @@
 <script setup>
   const props = defineProps({
-    productId: {
-      type: Number,
-      default: 0,
-    },
-    productImage: {
-      type: String,
-      default: "http://dummyimage.com/107x100.png/dddddd/000000",
-    },
-    productTitle: {
-      type: String,
-      default: "Product Title",
-    },
-    productPrice: {
-      type: String,
-      default: "$2.99",
+    productData: {
+      type: Object,
+      required: true,
     },
   });
 </script>
 
 <template>
   <div
-    @click="$router.push(`/product/${productId}`)"
+    @click="$router.push(`/product/${productData.id}`)"
     class="product-tab"
   >
     <img
-      :alt="`Product image for ${productTitle}.`"
-      :src="productImage"
+      :alt="`Product image for ${productData.title}.`"
+      :src="productData.image"
       class="image"
     />
 
     <div class="details">
-      <h3>{{ productTitle }}</h3>
-      <div>{{ productPrice }}</div>
+      <h3>{{ productData.title }}</h3>
+      <div>{{ productData.price }}</div>
     </div>
   </div>
 </template>
 
 <style scoped>
   .product-tab {
+    background: var(--main-elevated-light);
     border-radius: 8px;
     box-shadow: 1px 2px 4px 0 var(--main-div-light);
     display: flex;

@@ -16,6 +16,9 @@ const sql = {
   getProducts: `
     select * from PRODUCTS
     `,
+  getProductById: `
+    select * from PRODUCTS where id = ?
+    `,
 };
 
 module.exports = sql;
