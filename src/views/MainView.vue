@@ -12,7 +12,7 @@
   const products = ref();
 
   const getProducts = async () => {
-    const response = await fetch(`${inject("api")}/product`, {
+    const response = await fetch(`${inject("api")}/products`, {
       method: "GET",
     });
     const json = await response.json();
