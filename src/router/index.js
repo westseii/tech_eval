@@ -16,7 +16,7 @@ const router = createRouter({
       component: () => import("@/views/MainView.vue"),
     },
     {
-      path: "/product/:id", // dynamic route should match a product id/title
+      path: "/product/:id", // dynamic route should match a product id
       name: "Product",
       component: () => import("@/views/ProductView.vue"),
     },

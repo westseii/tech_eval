@@ -27,7 +27,6 @@ coverage
 *.sln
 *.sw?
 
-# normally .env would be hidden, but nothing sensitive is stored here for this app
+# normally .env would be hidden, but nothing sensitive is stored here
 # .env.development
 *.code-workspace
-db/sql/dummyData.js

@@ -1,4 +1,4 @@
-const prodData = require("./prodData.js");
+const prodData = require("../../prodData.js");
 const sqlite3 = require("sqlite3").verbose();
 
 const insertTemplate = `

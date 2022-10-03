@@ -1,38 +1,20 @@
 # sw-tech-eval
 
-## Project Setup
+## Scripts
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-## Other Scripts
-
-### Populate db with mock data
+### Populate SQLite database with mock table data
 
 ```sh
 npm run createdb
 ```
 
-### Drop products table/data (re-run createdb after)
+### Drop products table
 
 ```sh
 npm run wipedb
 ```
 
-### Run local express server; serve db/basic api
+### Run local express server. Serve database/API
 
 ```sh
 npm run server
